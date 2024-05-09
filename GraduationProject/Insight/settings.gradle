@@ -1,0 +1,22 @@
+pluginManagement {
+    repositories {
+        gradlePluginPortal()
+        mavenCentral()
+        jcenter()
+        google()
+        maven { url "http://api.tplmaps.com:8081/artifactory/example-repo-local/"
+            allowInsecureProtocol = true
+        }
+     }
+    }
+
+
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+    }
+}
+rootProject.name = "Insight"
+include ':app'
